@@ -15,9 +15,9 @@ public class EcrireFichier {
 		FileWriter fwriter = new FileWriter(nomFichierSortie);
 		BufferedWriter bwriter = new BufferedWriter(fwriter);
 
-		for (int i = 0; i < liste.listeSymptomes.size(); i++) {
+		for (int i = 0; i < liste.getListeSymptomes().size(); i++) {
 
-			String aEcrire = liste.listeSymptomes.get(i).nom + " : " + liste.listeSymptomes.get(i).occurences;
+			String aEcrire = liste.getListeSymptomes().get(i).getNom() + " : " + liste.getListeSymptomes().get(i).getOccurences();
 			bwriter.write(aEcrire);
 			bwriter.newLine();
 

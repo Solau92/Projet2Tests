@@ -2,8 +2,8 @@ package ClassesMetier;
 
 public class Symptome implements Comparable<Symptome> {
 
-	public String nom;
-	public int occurences;
+	private String nom;
+	private int occurences;
 
 	public Symptome() {
 		this.occurences = 0;
@@ -11,6 +11,27 @@ public class Symptome implements Comparable<Symptome> {
 
 	public Symptome(String nom, int occurences) {
 		this.nom = nom;
+		this.occurences = occurences;
+	}
+	
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @return the occurences
+	 */
+	public int getOccurences() {
+		return occurences;
+	}
+	
+	/**
+	 * @param occurences the occurences to set
+	 */
+	public void setOccurences(int occurences) {
 		this.occurences = occurences;
 	}
 

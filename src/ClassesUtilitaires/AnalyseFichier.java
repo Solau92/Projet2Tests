@@ -21,7 +21,7 @@ public class AnalyseFichier {
 		// Je parcours ma liste de Strings lue
 		for (String s : listeLue) {
 
-			if (liste.listeSymptomes.isEmpty()) {
+			if (liste.getListeSymptomes().isEmpty()) {
 				// liste vide : 1ère ligne (= comme pas trouvé)
 				String nom = s; // Donc récupérer ligne lue
 				Symptome symptomeAAjouter = new Symptome(nom, 1);
