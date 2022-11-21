@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import java.util.List;
 
+import ClassesMetier.ListeSymptomes;
 import ClassesMetier.Symptome;
 
 public class AnalyseFichier {

@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import ClassesMetier.ListeSymptomes;
+
 public class EcrireFichier {
 
 	public static void ecrireDansFichier(String nomFichierSortie, ListeSymptomes liste) throws IOException {
