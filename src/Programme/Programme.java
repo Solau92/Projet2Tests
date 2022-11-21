@@ -8,7 +8,7 @@ import ClassesUtilitaires.AnalyseFichier;
 public class Programme {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		
+
 		String nomFichierALire = "./fichiers/Symptomes.txt";
 		String nomFichierResultat = "./fichiers/Result.out.txt";
 

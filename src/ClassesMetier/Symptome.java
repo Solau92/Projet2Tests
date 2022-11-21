@@ -2,16 +2,37 @@ package ClassesMetier;
 
 public class Symptome implements Comparable<Symptome> {
 
-	public String nom ;
-	public int occurences ;
-	
+	private String nom;
+	private int occurences;
+
 	public Symptome() {
-		this.occurences = 0 ;
+		this.occurences = 0;
 	}
-	
+
 	public Symptome(String nom, int occurences) {
 		this.nom = nom;
-		this.occurences = occurences;		
+		this.occurences = occurences;
+	}
+	
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @return the occurences
+	 */
+	public int getOccurences() {
+		return occurences;
+	}
+	
+	/**
+	 * @param occurences the occurences to set
+	 */
+	public void setOccurences(int occurences) {
+		this.occurences = occurences;
 	}
 
 	@Override
@@ -47,7 +68,7 @@ public class Symptome implements Comparable<Symptome> {
 		} else if (this.nom.compareTo(o.nom) > 0) {
 			return 1;
 		} else {
-			return - 1;
+			return -1;
 		}
 	}
 
