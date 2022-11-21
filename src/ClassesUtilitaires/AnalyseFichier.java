@@ -11,7 +11,7 @@ public class AnalyseFichier {
 	
 	public static void analyserFichier(String nomFichierALire, String nomFichierResultat) throws FileNotFoundException, IOException {
 				
-		// Je lis le fichier et récupère la liste des symptomes sous forme de String
+		// Je lis le fichier et récupère la liste des symptomes sous forme de String  
 		List<String> listeLue = LireFichier.lireFichier(nomFichierALire);
 				
 		// Je crée ma liste de symptomes vide 

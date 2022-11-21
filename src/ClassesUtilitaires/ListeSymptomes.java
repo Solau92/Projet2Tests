@@ -36,9 +36,6 @@ public class ListeSymptomes {
 				break;
 			}
 		}
-		
-		
-//		this.listeSymptomes.set(0, symptome);
 
 	}
 

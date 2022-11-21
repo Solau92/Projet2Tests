@@ -2,11 +2,11 @@ package ClassesMetier;
 
 public class Symptome implements Comparable<Symptome> {
 
-	public String nom;
-	public int occurences;
+	public String nom ;
+	public int occurences ;
 	
 	public Symptome() {
-		this.occurences = 0;
+		this.occurences = 0 ;
 	}
 	
 	public Symptome(String nom, int occurences) {

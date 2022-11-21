@@ -15,5 +15,4 @@ public class Programme {
 		AnalyseFichier.analyserFichier(nomFichierALire, nomFichierResultat);
 
 	}
-
 }

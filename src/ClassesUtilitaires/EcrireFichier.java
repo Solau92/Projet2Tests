@@ -10,7 +10,7 @@ import java.util.List;
 
 public class EcrireFichier {
 
-	public static void ecrireDansFichier(String nomFichierSortie, ListeSymptomes liste) throws IOException {
+	public static void ecrireDansFichier (String nomFichierSortie, ListeSymptomes liste) throws IOException {
 
 		FileWriter fwriter = new FileWriter(nomFichierSortie);
 		BufferedWriter bwriter = new BufferedWriter(fwriter);
