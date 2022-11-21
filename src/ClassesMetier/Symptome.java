@@ -2,16 +2,16 @@ package ClassesMetier;
 
 public class Symptome implements Comparable<Symptome> {
 
-	public String nom ;
-	public int occurences ;
-	
+	public String nom;
+	public int occurences;
+
 	public Symptome() {
-		this.occurences = 0 ;
+		this.occurences = 0;
 	}
-	
+
 	public Symptome(String nom, int occurences) {
 		this.nom = nom;
-		this.occurences = occurences;		
+		this.occurences = occurences;
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class Symptome implements Comparable<Symptome> {
 		} else if (this.nom.compareTo(o.nom) > 0) {
 			return 1;
 		} else {
-			return - 1;
+			return -1;
 		}
 	}
 
