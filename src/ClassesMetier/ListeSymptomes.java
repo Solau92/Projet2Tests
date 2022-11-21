@@ -1,10 +1,8 @@
-package ClassesUtilitaires;
+package ClassesMetier;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import ClassesMetier.Symptome;
 
 public class ListeSymptomes {
 
