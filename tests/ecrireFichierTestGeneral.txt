@@ -1,0 +1,5 @@
+symptome1 : 1
+symptome2 : 2
+symptome3 : 3
+symptome4 : 4
+symptome5 : 5
