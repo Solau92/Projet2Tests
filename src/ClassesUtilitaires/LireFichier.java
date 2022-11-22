@@ -9,6 +9,14 @@ import java.util.List;
 
 public class LireFichier {
 
+	/**
+	 * Parcours un fichier et renvoie une liste de String (un élément par ligne).
+	 * @param nomFichier
+	 * @return une liste de String contenant toutes les lignes du fichier entré en paramètre
+	 * @return une liste vide si le fichier est vide
+	 * @throws IOException
+	 * @throws FileNotFoundException
+	 */
 	public static List<String> lireFichier(String nomFichier) throws IOException, FileNotFoundException {
 
 		// parcours de toutes les lignes du fichier jusqu'à la fin

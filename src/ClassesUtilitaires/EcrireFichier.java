@@ -12,6 +12,12 @@ import ClassesMetier.ListeSymptomes;
 
 public class EcrireFichier {
 
+	/**
+	 * Ecris dans un fichier dont le nom est entrée en paramètre les attributs des symptomes d'une liste entrée en paramètre. 
+	 * @param nomFichierSortie
+	 * @param liste
+	 * @throws IOException
+	 */
 	public static void ecrireDansFichier(String nomFichierSortie, ListeSymptomes liste) throws IOException {
 
 		FileWriter fwriter = new FileWriter(nomFichierSortie);

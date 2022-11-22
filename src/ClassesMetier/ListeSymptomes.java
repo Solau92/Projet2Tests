@@ -9,7 +9,7 @@ public class ListeSymptomes {
 	private List<Symptome> listeSymptomes;
 
 	public ListeSymptomes() {
-		this.listeSymptomes = new ArrayList();
+		this.listeSymptomes = new ArrayList<Symptome>();
 	}
 	
 	/**
@@ -19,6 +19,12 @@ public class ListeSymptomes {
 		return listeSymptomes;
 	}
 
+	/**
+	 * Cherche dans une liste de symptome si un symptome est présent, à partir d'un libellé (String).
+	 * @param nomSymptome
+	 * @return symptome si symptome trouvé à partir de son libellé
+	 * @return renvoie null si liste vide
+	 */
 	public Symptome chercherDansListe(String nomSymptome) {
 
 		for (Symptome s : this.listeSymptomes) {
@@ -29,10 +35,18 @@ public class ListeSymptomes {
 		return null;
 	}
 
+	/**
+	 * Ajoute un nouveau symptome dans la liste de symptome de la ListeSymptomes.
+	 * @param symptome
+	 */
 	public void ajouterNouveauSymptome(Symptome symptome) {
 		this.listeSymptomes.add(symptome);
 	}
 
+	/**
+	 * Incrémente le nombre d'occurences d'un symptome entré en paramètre.
+	 * @param symptome
+	 */
 	public void incremente(Symptome symptome) {
 
 		for (Symptome s : this.listeSymptomes) {
@@ -42,9 +56,11 @@ public class ListeSymptomes {
 				break;
 			}
 		}
-
 	}
 
+	/**
+	 * Trie la liste de symptome de la ListeSymptomes, par ordre alphabétique des libellés des symptomes. 
+	 */
 	public void trier() {
 		Collections.sort(this.listeSymptomes);
 	}
